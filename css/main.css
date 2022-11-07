@@ -31,6 +31,7 @@
         -webkit-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
+        font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -61,6 +62,53 @@ html{           /* set a font size! */
         margin: 0 auto;
 }
 
+header{
+        text-align: center;
+}
+
+h1{
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 60px;
+        margin: 0 auto;
+}
+
+h2{
+        padding: 10px 20px;
+        border-bottom: #717982 solid 1px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 25px;
+        color:#1EA78D;
+        margin: 0 auto;
+}
+
+p{
+        color: #717982;
+        line-height: 25px;
+}
+
+header p{
+        color:#ffffff;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-weight: 300;
+}
+
+header p:first-of-type{
+        font-size: 32px;
+        letter-spacing: 2px;
+}
+
+span{
+        color:#1EA78D;
+}
+
+b{
+        font-weight: 600;
+}
+
 .row{
         display: flex;
         justify-content: space-between;
@@ -69,6 +117,74 @@ html{           /* set a font size! */
 
 .img-responsive{
         max-width: 100%;
+}
+
+ul li,
+address ul li{
+        display:inline-block;
+        color:#ffffff;
+        padding-right: 8px;
+}
+
+address ul li{
+        font-weight: 600;
+        font-style: normal;
+}
+
+a{
+        text-decoration: none;
+        color:#ffffff;
+}
+
+li a:hover{
+        text-decoration: underline;
+        margin-bottom: 55px;
+
+}
+
+ul{
+        padding: 0;
+}
+
+
+
+/* ----- BACKGROUND COLOR ----- */
+
+#home>div:first-of-type{
+        background-color:#10443F ;
+        padding-top: 0;
+        position: fixed;
+        width: 100%;
+}
+
+#home{
+        background-color:#104F41 ;
+        padding: 0  0 400px 0;
+}
+
+#features{
+        background-color: #F4F7F9;
+        padding: 30px 0;
+}
+
+#work{
+        background-color: #ffff;
+        padding: 50px 0;
+        color:#717982;
+        text-align:center;
+        font-size: 15px;
+        font-weight: 600;
+}
+
+#contact{
+        border-top: #10443F solid 3px;
+        background-color: #1EA78D;
+        padding: 20px 0;
+}
+
+#contact p{
+        color:#ffffff;
+        font-size: 12px;
 }
 
 /* 
