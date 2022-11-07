@@ -31,12 +31,11 @@
         -webkit-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
-        font-family: 'Source Sans Pro', sans-serif;
 }
 
 
-html{           /* set a font size! */
-        font:.9rem/2rem 'Source Sans Pro,' sans-serif;
+html {           
+        font: .9rem/2em 'Source Sans Pro,' sans-serif;
         color:#717982;
 }
 
