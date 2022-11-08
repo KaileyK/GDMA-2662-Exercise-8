@@ -13,6 +13,10 @@
         - Framework
 6.0 - Components: specific designed components
         - Navigation 
+        -Header
+        -Footer
+        -Work
+        -Features
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Alignment
         -Screenreader	    
@@ -46,21 +50,24 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
-/* ----- TYPOGRAPHY ----- */
-
-header{
-        text-align: center;
+li,
+address li,
+h1,
+a{
+        color:#ffffff;
 }
 
+
+/* ----- TYPOGRAPHY ----- */
+
 h1{
-        color: #ffffff;
         font-weight: 300;
         font-size: 2.8rem;
         margin: 0 auto;
 }
 
 h2{
-        padding: 8px 20px;
+        padding: .5em 1em;
         border-bottom: #717982 solid 1px;
         display: inline-block;
         text-transform: uppercase;
@@ -75,30 +82,48 @@ h3{
         margin: .5em 0;
 }
 
-#features p{
-        margin: .6em 0;
-}
-
-
-header p{
-        color:#ffffff;
-        font-size: 1.3em;
-        margin: .5em 0;
-        margin-bottom: .2em;
-        font-weight: 300;
-}
-
-header p:first-of-type{
-        font-size: 1.5rem;
-        letter-spacing: .12rem;
-}
-
-span{
-        color:#1EA78D;
-}
-
 b{
         font-weight: 600;
+}
+
+a{
+        text-decoration: none;
+        padding-bottom: 4px;
+}
+
+a:hover{
+       border-bottom: #ffffff 1px solid;
+}
+
+ul{
+        padding: 0;
+        margin: 0 0 .6em 0;
+}
+
+li {
+        display:inline-block;
+}
+
+@media screen and (min-width: 768px){
+
+
+        nav{
+                text-align: right;
+        }
+
+
+        h1{
+                font-size: 4rem;
+                line-height: .9em;
+        }
+
+
+        p{
+                font-size: 1.2rem;
+                line-height: 1.6em;
+        }
+
+        
 }
 
 /*--------------------------------------------------------------
@@ -122,89 +147,6 @@ b{
 
 .img-responsive{
         max-width: 100%;
-}
-
-ul li,
-address ul li{
-        display:inline-block;
-        color:#ffffff;
-}
-
-nav ul li{
-        padding-right: 1em;
-}
-
-address ul li{
-        font-weight: 600;
-        font-style: normal;
-}
-
-a{
-        text-decoration: none;
-        color:#ffffff;
-        padding-bottom: 4px;
-}
-
-li a:hover{
-       border-bottom: #ffffff 1px solid;
-}
-
-ul{
-        padding: 0;
-        margin: 0 0 .6em 0;
-}
-
-
-/* ----- BACKGROUND COLOR ----- */
-
-#home>div:first-of-type{
-        background-color:#10443F ;
-        padding-top: 0;
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-}
-
-#home{
-        background-color:#104F41 ;
-        padding: 18em 0 10em 0;
-}
-
-#home .row{
-        justify-content: center;
-        padding-top: .3em;
-        align-items: center;
-}
-
-#features{
-        background-color: #F4F7F9;
-        padding: 3em 0;
-}
-
-#work{
-        padding: 4em 0;
-        color:#717982;
-        text-align:center;
-        font-size: 1.2rem;
-        font-weight: 600;
-}
-
-#work p,
-#work h2{
-        margin: 0 auto;
-}
-
-#contact{
-        border-top: #10443F solid 3px;
-        background-color: #1EA78D;
-        padding: 3em 0;
-}
-
-#contact p{
-        color:#ffffff;
-        font-size: .8rem;
 }
 
 [class*='col-']{
@@ -264,42 +206,7 @@ ul{
         .wrapper{
                 width: 75%;
         }
-
-        nav{
-                text-align: right;
-        }
-
-        #home .row>div{
-                text-align: left;
-        }
-
-        h1{
-                font-size: 3.8rem;
-                line-height: 1.3em;
-        }
-
-        header p{
-                font-size: 1.2rem;
-                margin: 0 auto;
-                margin-bottom: .2em;
-                font-weight: 300;
-        }
         
-        header p:first-of-type{
-                font-size: 2.2rem;
-                letter-spacing: .12rem;
-        }
-
-        p{
-                font-size: 1.2rem;
-        }
-
-        #contact p{
-                font-size: .9rem;
-                font-weight: 400;
-        }
-        
-
         .col-md-1 {
                 width: calc(100% * 1/ 12);
         }
@@ -354,12 +261,6 @@ ul{
         .wrapper{
                 width: 70%;
         }
-
-        #home{
-                padding: 18em 0 12em 0;
-        }
-
-        
        
         .col-lg-1 {
                 width: calc(100% * 1/ 12);
@@ -415,8 +316,14 @@ ul{
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+#work,
+header{
+        text-align:center;
+}
+
 
 /* -----HEADER------ */
+
 
 #home p:last-child{
         display: inline-block;
@@ -443,7 +350,137 @@ ul{
         right:-25px;
 }
 
+#home>div:first-of-type{
+        background-color:#10443F ;
+        padding-top: 0;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+}
 
+header p{
+        color:#ffffff;
+        font-size: 1.3em;
+        margin: .5em 0;
+        margin-bottom: .2em;
+        font-weight: 300;
+}
+
+header p:first-of-type{
+        font-size: 1.5rem;
+        letter-spacing: .12rem;
+}
+
+span{
+        color:#1EA78D;
+}
+
+#home{
+        background-color:#104F41 ;
+        padding: 18em 0 10em 0;
+}
+
+#home .row{
+        padding-top: .3em;
+        align-items: center;
+        justify-content: center;
+}
+
+nav li{
+        padding-right: 1em;
+}
+
+
+/* ----- FEATURES ----- */
+
+
+#features{
+        background-color: #F4F7F9;
+        padding: 3em 0;
+}
+
+#features p{
+        margin: .6em 0;
+}
+
+/* ----- WORK ----- */
+
+#work{
+        padding: 6em 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+}
+
+#work p,
+#work h2{
+        margin: 0 auto;
+}
+
+/* ----- FOOTER ----- */
+
+#contact{
+        border-top: #10443F solid 4px;
+        background-color: #1EA78D;
+        padding: 3em 0;
+}
+
+#contact p{
+        color:#ffffff;
+        font-size: .8rem;
+}
+
+address li{
+        font-weight: 600;
+        font-style: normal;
+}
+
+address li:nth-child(2) {
+        vertical-align: -webkit-baseline-middle;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+
+        /* ----- HEADER ----- */
+
+        #home .row>div{
+                text-align: left;
+        }
+
+        header p{
+                font-size: 1.2rem;
+                margin: 0 auto;
+                margin-bottom: .2em;
+                font-weight: 300;
+        }
+        
+        header p:first-of-type{
+                font-size: 2.2rem;
+                letter-spacing: .12rem;
+        }
+
+        /* ----- FOOTER ----- */
+        #contact p{
+                font-size: 1rem;
+                font-weight: 400;
+        }
+        
+}
+
+
+@media screen and (min-width: 1024px){
+
+        /* ----- HEADER ----- */
+
+        #home{
+                padding: 18em 0 12em 0;
+        }
+
+}
 
 /*--------------------------------------------------------------
     7.0 - UTILITY
@@ -454,10 +491,4 @@ ul{
 .col-center{
         justify-content: center;
         text-align: center;
-}
-
-/* -----SCREEN READER------ */
-
-.sr-only{
-        position:absolute;
 }
