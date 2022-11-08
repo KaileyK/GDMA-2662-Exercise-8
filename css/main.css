@@ -35,7 +35,7 @@
 
 
 html {           
-        font: .9rem/2em 'Source Sans Pro,' sans-serif;
+        font: .9rem/1.8em 'Source Sans Pro', sans-serif;
         color:#717982;
 }
 
@@ -60,29 +60,30 @@ h1{
 }
 
 h2{
-        padding: 10px 20px;
+        padding: 8px 20px;
         border-bottom: #717982 solid 1px;
         display: inline-block;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color:#1EA78D;
-        margin: 0 auto;
+        margin: 0 0 1.3em 0;
 }
 
 h3{
         text-align: left;
         color:#1E1E1E;
+        margin: .5em 0;
 }
 
-p{
-        color: #717982;
-        line-height: 1.5em;
+#features p{
+        margin: .6em 0;
 }
+
 
 header p{
         color:#ffffff;
-        font-size: 13px;
-        margin: 0 auto;
+        font-size: 1.3em;
+        margin: .5em 0;
         margin-bottom: .2em;
         font-weight: 300;
 }
@@ -150,6 +151,7 @@ li a:hover{
 
 ul{
         padding: 0;
+        margin: 0 0 .6em 0;
 }
 
 
@@ -172,20 +174,26 @@ ul{
 
 #home .row{
         justify-content: center;
-        padding-top: .9em;
+        padding-top: .3em;
+        align-items: center;
 }
 
 #features{
         background-color: #F4F7F9;
-        padding: 2em 0;
+        padding: 3em 0;
 }
 
 #work{
-        padding: 3em 0;
+        padding: 4em 0;
         color:#717982;
         text-align:center;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 600;
+}
+
+#work p,
+#work h2{
+        margin: 0 auto;
 }
 
 #contact{
@@ -267,17 +275,18 @@ ul{
 
         h1{
                 font-size: 3.8rem;
+                line-height: 1.3em;
         }
 
         header p{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 margin: 0 auto;
                 margin-bottom: .2em;
                 font-weight: 300;
         }
         
         header p:first-of-type{
-                font-size: 2rem;
+                font-size: 2.2rem;
                 letter-spacing: .12rem;
         }
 
@@ -285,9 +294,11 @@ ul{
                 font-size: 1.2rem;
         }
 
-        /* html{ Put in Generic
-                font-size: 1.2rem;
-        } */
+        #contact p{
+                font-size: .9rem;
+                font-weight: 400;
+        }
+        
 
         .col-md-1 {
                 width: calc(100% * 1/ 12);
@@ -347,6 +358,8 @@ ul{
         #home{
                 padding: 18em 0 12em 0;
         }
+
+        
        
         .col-lg-1 {
                 width: calc(100% * 1/ 12);
